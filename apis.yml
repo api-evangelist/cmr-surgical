@@ -1,8 +1,26 @@
 aid: cmr-surgical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cmr-surgical.png
 name: CMR Surgical
-description: 'CMR Surgical is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: health-tech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'CMR Surgical is a British medical-device company headquartered in Cambridge, UK, founded in
+  2014 (as Cambridge Medical Robotics). It develops Versius, a small, modular and portable robot-assisted
+  surgical system used across urology, general, gynaecological and thoracic surgery, and Versius Plus, its
+  next-generation platform cleared by the US FDA in December 2025. More than 45,000 patients have been treated
+  globally, making Versius one of the most widely used soft-tissue robotic surgery platforms. CMR reached
+  unicorn status in 2019 and raised a $600M Series D at a $3B valuation in 2021, backed by SoftBank Vision
+  Fund 2, GE Healthcare, ABB Technology Ventures and others. Its digital ecosystem (Versius Connect, Versius
+  Team, Versius Clinical Insights) is a login-gated clinical surface; CMR publishes no public developer API,
+  OpenAPI, SDKs or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/cmr-surgical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Health Tech
+- Medical Devices
+- Surgical Robotics
+- Robotics
+- Healthcare
+- MedTech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cmr-surgical-domain-security.yml
+- type: Website
+  url: https://us.cmrsurgical.com/
+- type: Blog
+  url: https://us.cmrsurgical.com/news
+  name: News
+- type: Support
+  url: https://us.cmrsurgical.com/contact-us
+  name: Contact Us
+- type: TermsOfService
+  url: https://us.cmrsurgical.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://us.cmrsurgical.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
